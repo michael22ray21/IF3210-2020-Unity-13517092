@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Boundary
+  - Player Bullet
+  - Blast
+  - Bullet Impact
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -13,8 +18,8 @@ TagManager:
   - UI
   - 
   - 
-  - Players
-  - Level
+  - Player
+  - 
   - 
   - 
   - 
@@ -40,4 +45,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1631359279
+    locked: 0
+  - name: Player
+    uniqueID: 702925303
+    locked: 0
+  - name: Foreground
+    uniqueID: 2279006085
     locked: 0
