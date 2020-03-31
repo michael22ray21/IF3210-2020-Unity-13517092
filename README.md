@@ -5,6 +5,7 @@
 2. Cara kerja, terutama mengenai pemenuhan spesifikasi aplikasi
     Cara kerja sangat simpel, cukup buka scene Main lalu tekan play.
     Pemenuhan spesifikasi:
+
     a. Terdapat karakter, GameObject Player. Dalam bentuk prefab di assets
     b. Karakter dapat digerakkan baik dengan W, A, S, dan D, ataupun dengan *arrow buttons*
     c. Sound effect saat menembak ada dalam assets/shoot
@@ -18,8 +19,9 @@
     l. Settings dari game tidak ada
     m. Kebbanyakan dari assets yang digunakan di project ini adalah free assets dari <https://www.kenney.nl/assets>
     n. Game dibuat sesuai platform saya, yaitu MacOS
+
 3. Library yang digunakan dan justifikasi penggunaannya
-    Library tambahan yang digunakan hanyalah Cinemachine
+    Library tambahan yang digunakan hanyalah Cinemachine, digunakan untuk mengaplikasikan kamera mengikuti player
 4. Screenshot aplikasi
 ![screenshot1](https://raw.githubusercontent.com/michael22ray21/IF3210-2020-Unity-13517092/master/Screenshots/SS1.png)
 ![screenshot2](https://raw.githubusercontent.com/michael22ray21/IF3210-2020-Unity-13517092/master/Screenshots/SS2.png)
