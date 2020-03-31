@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    [System.Serializable]
     public class EnemyStats
     {
         public int maxHealth = 100;

@@ -309,7 +309,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 989b0515623b9488c81daaae251efa44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_JumpForce: 550
+  m_JumpForce: 600
   m_CrouchSpeed: 0.4
   m_MovementSmoothing: 0.05
   m_AirControl: 1
@@ -337,6 +337,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 415d3c3dae87840279873ef5a655c06c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stats:
+    maxHealth: 100
   statusIndicator: {fileID: 3534349387237083446}
 --- !u!1 &6332397180708480474
 GameObject:
@@ -514,7 +516,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31bfba39bf6ce4901bb6ef137bea5986, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: -6
+  offset: 0
 --- !u!1001 &655009204
 PrefabInstance:
   m_ObjectHideFlags: 0

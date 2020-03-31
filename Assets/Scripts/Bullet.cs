@@ -19,6 +19,7 @@ public class Bullet : MonoBehaviour
 
     void OnEnable()
     {
+        GameMaster.gm.GetComponent<AudioManager>().PlaySound("Shoot");
         rb.velocity = transform.right * speed;
         camShake.Shake(shakeAmount, shakeLength);
     }
@@ -35,6 +36,7 @@ public class Bullet : MonoBehaviour
             }
             else
             {
+                GameMaster.gm.GetComponent<AudioManager>().PlaySound("Hit");
                 // Take action
                 if (hitInfo.CompareTag("Enemy")) hitInfo.GetComponent<Enemy>().DamageEnemy(damage);
                 // Blast away

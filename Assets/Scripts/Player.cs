@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    [System.Serializable]
     public class PlayerStats
     {
         public int maxHealth = 100;
@@ -32,6 +33,10 @@ public class Player : MonoBehaviour
     private void Update()
     {
         if (transform.position.y <= -30) DamagePlayer(99999);
+        if (statusIndicator != null)
+        {
+            statusIndicator.SetHealth(stats.curHealth, stats.maxHealth);
+        }
     }
 
     public void DamagePlayer(int damage)
@@ -41,6 +46,7 @@ public class Player : MonoBehaviour
         {
             GameMaster.KillPlayer(this);
         }
+        GameMaster.gm.GetComponent<AudioManager>().PlaySound("Hurt");
         if (statusIndicator != null)
         {
             statusIndicator.SetHealth(stats.curHealth, stats.maxHealth);

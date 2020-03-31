@@ -129,7 +129,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 2
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -151,7 +151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   updateRate: 2
-  speed: 500
+  speed: 400
   fMode: 0
   pathIsEnded: 0
   nextWaypointDistance: 3
@@ -183,6 +183,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea9f16d33192549109c570ee279b3166, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stats:
+    maxHealth: 100
+    damage: 40
   statusIndicator: {fileID: 999253363}
 --- !u!1001 &8297338411979603073
 PrefabInstance:
