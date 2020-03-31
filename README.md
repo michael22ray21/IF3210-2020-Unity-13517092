@@ -4,7 +4,7 @@
     Aplikasi ini dikerjakan untuk memnuhi tugas besar 2 mata kuliah IF3210 Pengembangan Aplikasi Pada Platform Khusus.
 2. Cara kerja, terutama mengenai pemenuhan spesifikasi aplikasi
   Cara kerja sangat simpel, cukup buka scene Main lalu tekan play.
-  Pemenuhan spesifikasi:
+  Pemenuhan spesifikasi:  
   a. Terdapat karakter, GameObject Player. Dalam bentuk prefab di assets
   b. Karakter dapat digerakkan baik dengan W, A, S, dan D, ataupun dengan *arrow buttons*
   c. Sound effect saat menembak ada dalam assets/shoot
