@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 5151904352213201638}
-  damage: 10
+  damage: 40
   speed: 15
-  impactEffect: {fileID: 6419831890004801580, guid: 68f92a5192853496d8d0ffd2367131dc,
-    type: 3}
+  shakeAmount: 0.05
+  shakeLength: 0.05

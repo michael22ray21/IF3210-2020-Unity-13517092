@@ -9,6 +9,8 @@ TagManager:
   - Blast
   - Bullet Impact
   - Enemy
+  - GM
+  - EnemyDeath
   layers:
   - Default
   - TransparentFX
@@ -19,7 +21,7 @@ TagManager:
   - 
   - 
   - Player
-  - 
+  - Platform
   - 
   - 
   - 

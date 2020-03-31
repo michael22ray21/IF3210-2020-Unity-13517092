@@ -20,6 +20,7 @@ public class CharController : MonoBehaviour
 	private Rigidbody2D m_Rigidbody2D;
 	private bool m_FacingRight = true;  // For determining which way the player is currently facing.
 	private Vector3 m_Velocity = Vector3.zero;
+	Transform m_PlayerGraphics;
 
 	[Header("Events")]
 	[Space]
@@ -36,6 +37,7 @@ public class CharController : MonoBehaviour
 	private void Awake()
 	{
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
+		m_PlayerGraphics = transform.Find("Graphics");
 
 		if (OnLandEvent == null)
 			OnLandEvent = new UnityEvent();
@@ -144,6 +146,6 @@ public class CharController : MonoBehaviour
 		m_FacingRight = !m_FacingRight;
 
 		// rotate the sprite along Y axis 180 deg
-		transform.Rotate(0f, 180f, 0f);
+		m_PlayerGraphics.transform.Rotate(0f, 180f, 0f);
 	}
 }

@@ -4,18 +4,49 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public int health = 100;
-    public GameObject deathEffect;
-
-    public void TakeDamage(int damage)
+    public class EnemyStats
     {
-        health -= damage;
-        if (health <= 0) Die();
+        public int maxHealth = 100;
+        private int _curHealth;
+        public int damage = 40;
+        public int curHealth
+        {
+            get { return _curHealth; }
+            set { _curHealth = Mathf.Clamp(value, 0, maxHealth); }
+        }
+        public void Init() { curHealth = maxHealth; }
     }
 
-    void Die()
+    public EnemyStats stats = new EnemyStats();
+    [Header("Optional :")]
+    [SerializeField]
+    private StatusIndicator statusIndicator;
+
+    private void Start()
     {
-        Instantiate(deathEffect, transform.position, Quaternion.identity);
-        Destroy(gameObject);
+        stats.Init();
+        if (statusIndicator != null)
+        {
+            statusIndicator.SetHealth(stats.curHealth, stats.maxHealth);
+        }
+    }
+
+    public void DamageEnemy(int damage)
+    {
+        stats.curHealth -= damage;
+        if (stats.curHealth <= 0)
+        {
+            GameMaster.KillEnemy(this);
+        }
+        if (statusIndicator != null)
+        {
+            statusIndicator.SetHealth(stats.curHealth, stats.maxHealth);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Player player = collision.collider.GetComponent<Player>();
+        if (player != null) player.DamagePlayer(stats.damage);
     }
 }

@@ -15,7 +15,6 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         DirX = Input.GetAxisRaw("Horizontal") * runSpeed;
-
         if (Input.GetButtonDown("Jump")) jump = true;
         if (Input.GetButtonDown("Crouch")) crouch = true;
         else if (Input.GetButtonUp("Crouch")) crouch = false;

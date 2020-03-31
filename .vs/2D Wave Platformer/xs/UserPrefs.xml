@@ -1,7 +1,11 @@
 ﻿<Properties StartupConfiguration="{B04469C5-8175-02EC-4DBA-504D4B1DAAD6}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameMaster.cs">
     <Files>
-      <File FileName="Assets/Scripts/PlayerController.cs" Line="35" Column="61" />
+      <File FileName="Assets/Scripts/StatusIndicator.cs" Line="17" Column="26" />
+      <File FileName="Assets/Scripts/Enemy.cs" Line="47" Column="59" />
+      <File FileName="Assets/Scripts/Player.cs" Line="19" Column="50" />
+      <File FileName="Assets/Scripts/EnemyAI.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/GameMaster.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -9,17 +13,22 @@
           <Node name="2D Wave Platformer" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="PlayerController.cs" selected="True" />
+                <Node name="GameMaster.cs" selected="True" />
               </Node>
             </Node>
           </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="2D Wave Platformer" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f6b6a2dc-cb7e-44ac-8959-6836cda90029" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f9d723ad-c9db-4358-8bb9-e2cddc519892" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

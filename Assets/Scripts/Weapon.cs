@@ -6,11 +6,24 @@ public class Weapon : MonoBehaviour
 {
     public Transform firePoint;
     public GameObject bulletPrefab;
+    public float fireRate = 0f;
+    float timeToFire = 0f;
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1")) Shoot();
+        if (fireRate == 0)
+        {
+            if (Input.GetButtonDown("Fire1")) Shoot();
+        }
+        else
+        {
+            if (Input.GetButtonDown("Fire1") && Time.time > timeToFire)
+            {
+                timeToFire = Time.time + 1 / fireRate;
+                Shoot();
+            }
+        }
     }
 
     void Shoot()
